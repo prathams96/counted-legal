@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f7f0e8" />
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <title>Counted: Visits &amp; Memories</title>
     <meta
       name="description"
@@ -22,8 +24,9 @@
       property="og:url"
       content="https://prathams96.github.io/counted-legal/"
     />
-    <meta property="og:image" content="./assets/images/moon_surface.webp" />
+    <meta property="og:image" content="https://prathams96.github.io/counted-legal/assets/images/moon_surface.webp" />
     <meta property="og:image:alt" content="A warm Eclipse moon used by Counted" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="./styles.css" />
     <script type="application/ld+json">
       {
@@ -98,7 +101,7 @@
         </div>
       </section>
 
-      <section class="calculator-section" id="calculator" aria-labelledby="calculator-title">
+      <section class="calculator-section" id="calculator" aria-labelledby="calculator-title" data-reveal>
         <div class="shell calculator-grid">
           <div class="section-intro">
             <p class="eyebrow">A private first step</p>
@@ -207,7 +210,7 @@
         </noscript>
       </section>
 
-      <section class="story-section" id="how-it-works" aria-labelledby="story-title">
+      <section class="story-section" id="how-it-works" aria-labelledby="story-title" data-reveal>
         <div class="shell story-grid">
           <div class="story-copy">
             <p class="eyebrow">See time differently</p>
@@ -231,7 +234,7 @@
         </div>
       </section>
 
-      <section class="memory-section" aria-labelledby="memory-title">
+      <section class="memory-section" aria-labelledby="memory-title" data-reveal>
         <div class="shell memory-grid">
           <div class="memory-copy">
             <p class="eyebrow">Keep the moments that matter</p>
@@ -253,7 +256,7 @@
         </div>
       </section>
 
-      <section class="reminder-section" aria-labelledby="reminder-title">
+      <section class="reminder-section" aria-labelledby="reminder-title" data-reveal>
         <div class="shell reminder-inner">
           <div>
             <p class="eyebrow">A gentle nudge, when you want one</p>
@@ -266,7 +269,7 @@
         </div>
       </section>
 
-      <section class="privacy-section" aria-labelledby="privacy-title">
+      <section class="privacy-section" aria-labelledby="privacy-title" data-reveal>
         <div class="shell privacy-grid">
           <div>
             <p class="eyebrow">Privacy architecture</p>
@@ -284,7 +287,7 @@
         </div>
       </section>
 
-      <section class="plus-section" id="plus" aria-labelledby="plus-title">
+      <section class="plus-section" id="plus" aria-labelledby="plus-title" data-reveal>
         <div class="shell plus-grid">
           <div class="plus-copy">
             <p class="eyebrow eyebrow-light">In development</p>
@@ -313,7 +316,7 @@
         </div>
       </section>
 
-      <section class="faq-section" aria-labelledby="faq-title">
+      <section class="faq-section" aria-labelledby="faq-title" data-reveal>
         <div class="shell faq-grid">
           <div class="faq-intro">
             <p class="eyebrow">Questions worth answering</p>
@@ -361,7 +364,7 @@
         </div>
       </section>
 
-      <section class="founder-section" aria-labelledby="founder-title">
+      <section class="founder-section" aria-labelledby="founder-title" data-reveal>
         <div class="shell founder-note">
           <p class="eyebrow">A note from the creator</p>
           <h2 id="founder-title">Family time is experienced in visits.</h2>
@@ -396,5 +399,6 @@
     <script src="./data/life_expectancy.js"></script>
     <script type="module" src="./scripts/eclipse.mjs"></script>
     <script type="module" src="./scripts/visit-calculator.mjs"></script>
+    <script type="module" src="./scripts/site.mjs"></script>
   </body>
 </html>

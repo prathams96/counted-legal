@@ -124,6 +124,7 @@ function resetCalculator(form, result, error) {
   document.querySelector("#frequency").value = "weekly";
   document.querySelector("#region").value = "global";
   result.hidden = true;
+  result.classList.remove("is-revealing");
   setError(error, "");
   document.querySelector("#age-error").textContent = "";
 }
@@ -177,6 +178,8 @@ function initCalculator() {
       });
       setResult(result, estimate, data);
       result.hidden = false;
+      result.classList.remove("is-revealing");
+      window.requestAnimationFrame(() => result.classList.add("is-revealing"));
       result.focus({ preventScroll: true });
     } catch (calculationError) {
       setError(error, calculationError.message || "We couldn't make that estimate yet.");
