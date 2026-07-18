@@ -933,43 +933,109 @@ select:invalid {
   color: rgba(255, 250, 245, 0.72);
 }
 
-.email-row {
-  display: flex;
-  gap: 10px;
-}
-
-.email-row input {
-  min-width: 0;
-  flex: 1;
-  background: rgba(255, 250, 245, 0.98);
-  border-color: transparent;
-}
-
 .form-help,
-.form-status,
-.retry-button {
+.recaptcha-notice {
   margin-top: 12px;
 }
 
 .form-help,
-.form-status {
+.recaptcha-notice {
   max-width: 58ch;
   color: rgba(255, 250, 245, 0.62) !important;
   font-size: 12px !important;
 }
 
-.form-status:empty,
-.field-error:empty,
-.form-error:empty {
-  display: none;
+.recaptcha-notice a {
+  color: inherit;
+  text-decoration-color: rgba(255, 250, 245, 0.4);
+  text-underline-offset: 3px;
 }
 
-.text-button-light {
-  color: var(--gold-soft);
+.early-access-form > [data-form="c418a940-8287-11f1-8a01-9776093241e9"] {
+  --font-family: "Satoshi", "Helvetica Neue", Arial, sans-serif;
+  --base-font-size: 16px;
+  --field-colour: rgba(255, 250, 245, 0.98);
+  --field-border-colour: transparent;
+  --button-colour: var(--paper-raised);
+  --button-text-colour: var(--earth);
+  --text-colour: var(--paper-raised);
+  --label-colour: var(--paper-raised);
+  margin: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
 }
 
-.early-access-form .field-error {
-  color: var(--gold-soft);
+.early-access-form [data-form="c418a940-8287-11f1-8a01-9776093241e9"] .form-container,
+.early-access-form [data-form="c418a940-8287-11f1-8a01-9776093241e9"] .emailoctopus-form-wrapper {
+  margin: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+.early-access-form [data-form="c418a940-8287-11f1-8a01-9776093241e9"] .emailoctopus-form [eo-form-fields-container],
+.early-access-form [data-form="c418a940-8287-11f1-8a01-9776093241e9"] .main-form {
+  align-items: stretch !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  gap: 10px !important;
+}
+
+.early-access-form [data-form="c418a940-8287-11f1-8a01-9776093241e9"] .emailoctopus-form-row {
+  margin: 0 !important;
+  min-width: 0 !important;
+}
+
+.early-access-form [data-form="c418a940-8287-11f1-8a01-9776093241e9"] input[type="email"] {
+  min-height: 48px !important;
+  width: 100% !important;
+  border: 1px solid transparent !important;
+  border-radius: 999px !important;
+  background: rgba(255, 250, 245, 0.98) !important;
+  color: var(--ink) !important;
+  font: inherit !important;
+  padding: 12px 18px !important;
+}
+
+.early-access-form [data-form="c418a940-8287-11f1-8a01-9776093241e9"] input[type="email"]:focus {
+  border-color: var(--gold-soft) !important;
+  box-shadow: 0 0 0 3px rgba(229, 191, 148, 0.2) !important;
+  outline: none !important;
+}
+
+.early-access-form [data-form="c418a940-8287-11f1-8a01-9776093241e9"] input[type="submit"] {
+  min-height: 48px !important;
+  border: 1px solid var(--paper-raised) !important;
+  border-radius: 999px !important;
+  background: var(--paper-raised) !important;
+  color: var(--earth) !important;
+  cursor: pointer !important;
+  font: inherit !important;
+  font-weight: 700 !important;
+  padding: 12px 22px !important;
+  transition: transform 180ms ease, background 180ms ease !important;
+  white-space: nowrap !important;
+}
+
+.early-access-form [data-form="c418a940-8287-11f1-8a01-9776093241e9"] input[type="submit"]:hover {
+  background: var(--gold-soft) !important;
+  transform: translateY(-1px);
+}
+
+.early-access-form [data-form="c418a940-8287-11f1-8a01-9776093241e9"] input[type="submit"]:disabled {
+  cursor: wait !important;
+  opacity: 0.68 !important;
+}
+
+.early-access-form [data-form="c418a940-8287-11f1-8a01-9776093241e9"] .emailoctopus-error-message,
+.early-access-form [data-form="c418a940-8287-11f1-8a01-9776093241e9"] .emailoctopus-success-message {
+  color: var(--gold-soft) !important;
+  margin-top: 12px !important;
+  text-align: left !important;
+}
+
+.early-access-form [data-form="c418a940-8287-11f1-8a01-9776093241e9"] .mastfoot {
+  margin-top: 12px !important;
+  opacity: 0.72;
 }
 
 .faq-section {
@@ -1373,8 +1439,13 @@ select:invalid {
     min-height: 150px;
   }
 
-  .email-row {
-    display: grid;
+  .early-access-form [data-form="c418a940-8287-11f1-8a01-9776093241e9"] .emailoctopus-form [eo-form-fields-container],
+  .early-access-form [data-form="c418a940-8287-11f1-8a01-9776093241e9"] .main-form {
+    grid-template-columns: 1fr !important;
+  }
+
+  .early-access-form [data-form="c418a940-8287-11f1-8a01-9776093241e9"] input[type="submit"] {
+    width: 100% !important;
   }
 
   .footer-bottom {
