@@ -38,7 +38,7 @@
       }
     </script>
   </head>
-  <body data-emailoctopus-endpoint="">
+  <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="shell header-inner">
@@ -305,17 +305,11 @@
             <h3>Want to see where it goes?</h3>
             <p>Join the early-access list for meaningful updates, beta invitations, and launch news worth sharing.</p>
           </div>
-          <form class="early-access-form" id="early-access-form" action="#" method="post" novalidate data-emailoctopus-endpoint="" data-email-field="email">
-            <label class="sr-only" for="early-access-email">Email address</label>
-            <div class="email-row">
-              <input id="early-access-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required aria-describedby="early-access-help early-access-error" />
-              <button class="button button-light" type="submit">Join early access</button>
-            </div>
+          <div class="early-access-form" id="early-access-form">
+            <script async src="https://eomail5.com/form/c418a940-8287-11f1-8a01-9776093241e9.js" data-form="c418a940-8287-11f1-8a01-9776093241e9"></script>
             <p class="form-help" id="early-access-help">You'll receive a welcome email and occasional meaningful updates about Counted Plus. Unsubscribe anytime. Email is handled by EmailOctopus.</p>
-            <p class="field-error" id="early-access-error" role="alert"></p>
-            <p class="form-status" id="early-access-status" role="status" aria-live="polite"></p>
-            <button class="text-button text-button-light retry-button" id="early-access-retry" type="button" hidden>Retry</button>
-          </form>
+            <p class="recaptcha-notice">This form uses Google reCAPTCHA for bot protection. Google's <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms</a> apply.</p>
+          </div>
         </div>
       </section>
 
@@ -402,6 +396,5 @@
     <script src="./data/life_expectancy.js"></script>
     <script type="module" src="./scripts/eclipse.mjs"></script>
     <script type="module" src="./scripts/visit-calculator.mjs"></script>
-    <script type="module" src="./scripts/site.mjs"></script>
   </body>
 </html>
